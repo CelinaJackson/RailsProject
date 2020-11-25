@@ -1,4 +1,3 @@
 class Piece < ActiveRecord::Base
-    validates :artist_id, presence: true
-    belongs_to :artist  
+    has_many :sightings
 end 
